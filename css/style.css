@@ -1,0 +1,207 @@
+.signUpHeader {
+  line-height: 55px;
+  height: 55px;
+  color: white;
+}
+.signUpHeaderWrapper {
+  position: fixed;
+  top:0;
+  width:100%;
+  background-color: #2D2D2D;
+}
+.signUpHeaderWrapper > .container {
+  padding:0;
+}
+
+.navbar-dark {
+  background-color: transparent;
+}
+.signUpButton {
+  text-transform: uppercase;
+  height: 55px;
+  color:white;
+  background-color: #77BC1F;
+  float:right;
+  border:0;
+  width:220px;
+  margin-right: 4px
+}
+
+.signUpButton:hover, .bigGreenButton:hover{
+
+  background-color: rgb(89, 139, 23);
+
+}
+
+.navbar-brand > img {
+  width: 250px;
+  margin-top:12px;
+  margin-left:-6px;
+}
+.navbar-nav {
+  float:right;
+}
+.navbar {
+  padding: 0;
+  line-height: 85px;
+}
+.navbar > .container {
+  border-bottom: 1px solid #77BC1F;
+  padding:0;
+}
+.navbar .nav li a.nav-link {
+  color: #77BC1F;
+}
+nav {
+  background-color: transparent;
+}
+.navbar-fixed-top {
+  top:55px;
+}
+
+#headerSlider {
+  height:600px;
+  margin-top: 50px;
+}
+#headerSlider .carousel-item {
+  height:600px;
+}
+
+.bigGreenButton {
+  text-transform: uppercase;
+  background-color: #77BC1F;
+  color: white;
+  width: 350px;
+  height: 55px;
+  border: 0;
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+.headerOverlay {
+  pointer-events: none;
+  height:600px;
+  position: absolute;
+  z-index: -10;
+  width:100%;
+  background-image: url('../images/gamejam-webseite_header-shadow.png');
+  background-repeat: repeat-x;
+  opacity: 0.9;
+}
+
+@media (min-width: 544px) {
+  .carousel-caption {
+    top: 190px;
+    text-align: center !important;
+  }
+}
+
+.carousel-caption {
+  text-shadow: 0 0px 14px rgba(0, 0, 0, 1);
+}
+.carousel-text-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.small-container-heaeder {
+  width: 500px;
+}
+
+a {
+  color: #77BC1F;
+}
+
+.bg-lightGrey {
+  background-color: #f1f1f1;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+.nav-item:hover a {
+   color: #77BC1F !important;
+   text-shadow: 0 0px 14px #77BC1F;
+}
+
+.nav-item .active a {
+   color: #77BC1F !important;
+   text-shadow: 0 0px 14px #77BC1F;
+}
+
+@media (max-width: 768px) {
+  .signUpButton {
+    display:none !important;
+  }
+  .signUpHeader {
+    font-size: 9pt;
+    text-align: center;
+  }
+  .responsiveLogo {
+    width: 90%;
+  }
+  .responsiveLogoWrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .headerOverlay {
+     background-size: 40% 40%;
+  }
+  .bigGreenButton {
+    width: auto !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .carousel-caption {
+    top: 120px;
+  }
+  .carousel-item:nth-child(2) img {
+    left:-9400px !important;
+  }
+  .row {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .flickr-embed-photo a img {
+    margin-left: -20px !important;
+  }
+}
+@media (min-width: 768px) {
+  .responsiveLogo {
+    display: none;
+  }
+}
+
+.sponsors DIV {
+  padding-top:20px;
+}
+
+.topentries td {
+  border: #77BC1F;
+  font-size: 20pt;
+  padding: 0 10px
+
+}
+
+
+i.gold {
+  color: goldenrod;
+}
+
+i.silver {
+  color: silver;
+}
+
+i.bronze {
+  color: brown;
+}
