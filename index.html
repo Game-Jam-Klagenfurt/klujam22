@@ -1,40 +1,1126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>4th Winter Game Jam</title>
-    <style>
-        body {
-            background-color: #1B459C;
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>4th Klagenfurt Winter Game Jam, Dec 18-20, 2020</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- FONT LATO -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <style type="text/css">
+        .row {
+            margin-top: 32px;
         }
-        .box {
-            width: 100%;
-            height: 566px;
-            background-image: url("img/SavetheDate.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            alignment: center;
+
+        .row-heading {
+            color: #003CA6;
+            font-size: 20pt;
+            text-transform: uppercase;
         }
-        .nav-link {
-            color: #77BC1F;
-            font-size: 28pt;
-            margin: 4pt
+
+        h1,
+        h2,
+        h3 {
+            margin-bottom: 8pt;
+            margin-top: 12pt;
+            font-family: "Lato";
         }
-        .socialmedia {
-            width: 100%;
-            margin-top: 24pt;
-            text-align: center;
+
+        .sponsor-wide {
+            margin-top: 6px;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 120px;
+            max-width: 95%;
+        }
+
+        .sponsor-square {
+            margin-top: 6px;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 160px;
+            max-width: 95%;
+        }
+
+        .ruler {
+            clear: both;
+            width: 15%;
+            background-color: #d1d1d1;
+            height: 1px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .jam-bullet {
+            padding-left: 6pt;
+            padding-right: 6pt;
+            color: #003CA6;
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<div class="box"></div>
-<div class="socialmedia">
-    <a class="nav-link" href="https://www.facebook.com/gamejamklagenfurt/"><i class="fab fa-facebook-square"></i></a>
-    <a class="nav-link" href="https://twitter.com/hashtag/klujam?src=hash"><i class="fab fa-twitter-square"></i></a>
-    <a class="nav-link" href="https://www.youtube.com/playlist?list=PLkb7TymgoWW5IEWs_BRLVFtFSRSVgF22j"><i class="fab fa-youtube"></i></a>
-    <a class="nav-link" href="http://www.instagram.com/gamebert.aau"><i class="fab fa-instagram"></i></a>
-    <a class="nav-link" href="https://discord.gg/3VzRJz4"><i class="fab fa-discord"></i></a></div>
+
+
+    <nav class="navbar navbar-fixed-top navbar-dark">
+        <div class="headerOverlay"></div>
+        <div class="signUpHeaderWrapper">
+            <div class="container">
+                <div class="signUpHeader">
+                    4th Klagenfurt Winter Game Jam, Dec 18-20, 2020 - Klagenfurt, Austria
+
+
+                    <!-- Noscript content for added SEO -->
+                    <noscript><a href="https://www.eventbrite.com/e/7th-klagenfurt-game-jam-registration-989845464437" rel="noopener noreferrer" target="_blank"></noscript>
+                    <!-- You can customize this button any way you like -->
+                    <button id="eventbrite-widget-modal-trigger-81451653087" class="signUpButton" type="button">Register</button>
+                    <!-- <button class="signUpButton">Register</button> -->
+                    <noscript></a>Get registered on Eventbrite</noscript>
+
+
+                    <a href="https://itch.io/jam/4th-winter-gamejam">
+                        <button class="signUpButton">Join on Itch.io</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="responsiveLogoWrapper">
+                <img class="responsiveLogo" src="images/gamejam-logo.svg">
+            </div>
+            <div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar2">
+                <a href="/" class="navbar-brand"><img src="images/gamejam-logo.svg"></a>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a id="homeNavLink" class="nav-link anchor">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="registerNavLink" class="nav-link anchor">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="rulesNavLink" class="nav-link anchor">Rules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="programNavLink" class="nav-link anchor">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="photosNavLink" class="nav-link anchor" href="https://flic.kr/s/aHskVZisBw">Photos</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/gamejamklagenfurt/"><i
+                                class="fab fa-facebook-square"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://twitter.com/hashtag/klujam?src=hash"><i
+                                class="fab fa-twitter-square"></i></a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="https://www.youtube.com/playlist?list=PLkb7TymgoWW5IEWs_BRLVFtFSRSVgF22j"><i
+                                class="fab fa-youtube"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://www.instagram.com/gamebert.aau"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://discord.gg/3VzRJz4"><i
+                                class="fab fa-discord"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.twitch.tv/dermotte_"><i
+                                class="fab fa-twitch"></i></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <!--<div class="container-fluid bg-lightGrey">
+    <div class="container">
+        <div class="row" style="padding-top: 64px; padding-bottom: 32px;">
+            <div class="col-md-12">
+                <h1>4th Klagenfurt Game Jam</h1>
+                <p><i>April 28-30, 2017, Klagenfurt, Austria</i></p>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+    <!-- Carousel
+================================================== -->
+    <div id="headerSlider" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#slide1" data-slide-to="0" class="active"></li>
+            <li data-target="#slide2" data-slide-to="1"></li>
+            <li data-target="#slide3" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div>
+                    <img class="first-slide" src="images/gamejam-webseite_header-1.jpg" alt="First slide"
+                        style="margin-left: 0 auto;min-height: 28rem; max-width: none;">
+                </div>
+                <div class="container small-container-header">
+                    <div class="carousel-caption-wrapper">
+                        <div class="carousel-caption">
+                            <div class="carousel-text-wrapper">
+                                <h1>4th Klagenfurt Winter Game Jam</h1>
+                                <p>The 4th Klagenfurt Winter Game Jam is open to everyone who likes games and wants to create,
+                                    test
+                                    and
+                                    talk about games. Starting on Friday the topic will be revealed to all participants
+                                    and
+                                    the next 48 hours are about making it happen.</p>
+                                <p><a href="#">
+                                        <!-- Noscript content for added SEO -->
+                                        <!-- <noscript><a href="https://www.eventbrite.com/e/6th-klagenfurt-game-jam-registration-81451653087" rel="noopener noreferrer" target="_blank"></noscript> -->
+                                        <!-- You can customize this button any way you like -->
+                                        <button id="eventbrite-widget-modal-trigger-81451653087" class="bigGreenButton"
+                                            type="button">Register here!</button>
+                                    </a><noscript>Get registered on Eventbrite</noscript>
+                                    </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="second-slide" src="images/gamejam-webseite_header-2.jpg" alt="Second slide"
+                    style="min-height: 28rem; max-width: none">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <div class="carousel-text-wrapper">
+                            <h1>4th Klagenfurt Winter Game Jam will be 100% digital!</h1>
+                            <blockquote>
+                                <p>A game jam is a gathering of game developers for the purpose of planning, designing,
+                                    and
+                                    creating one or more games within a short span of time, usually ranging between 24
+                                    and
+                                    72
+                                    hours. [...] The term game jam is a composition of the
+                                    words game and jam session. <a style="color:white;"
+                                        href="https://en.wikipedia.org/wiki/Game_jam">from
+                                        Wikipedia</a>
+                                </p>
+                            </blockquote>
+                            <p>
+                                <button id="learnMoreGameJamButton" class="bigGreenButton">Learn more</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="third-slide" src="images/gamejam-webseite_header-3.jpg" alt="Third slide"
+                    style="min-height: 28rem; max-width: none">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <div class="carousel-text-wrapper">
+                            <h1>Game Jams are fun!</h1>
+                            <p>The previous Klagenfurt Game Jams were a huge success. Great people made great games!
+                                <!-- Join now by clicking the button below :) -->
+                                Have a look at all the amazing games of our last jam(s):
+                            </p>
+                            <p>
+                            <a href="https://itch.io/jam/7thklujam" target="_blank">
+                                <button class="bigGreenButton">Itch.io</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>-->
+</div><!-- /.carousel -->
+        <!-- Marketing messaging and featurettes
+    ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+<!--                <div id="whatIsGameJam" class="col-lg-12">-->
+
+<!--                </div>-->
+                <div class="col-lg-4 text-justify">
+                    <h2 class="row-heading"><i class="fab fa-discord"></i> &nbsp; Join us on Discord!</h2>
+                    Use the <a href="https://discord.gg/3VzRJz4">klujam Discord server</a> to
+                    <p>
+                        <i class="fas fa-check-circle jam-bullet"></i> get all the announcements<br/>
+                        <i class="fas fa-check-circle jam-bullet"></i> ask questions & get answers<br/>
+                        <i class="fas fa-check-circle jam-bullet"></i> everybody else is there too
+
+                    </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 text-justify">
+                    <h2 class="row-heading"><i class="fab fa-itch-io"></i> &nbsp; Register at itch.io!</h2>
+                    Join the <a href="https://itch.io/jam/4th-winter-gamejam">Klagenfurt Game Jam at Itch.io</a>!
+                    <p>
+                        <i class="fas fa-check-circle jam-bullet"></i> create an account<br/>
+                        <i class="fas fa-check-circle jam-bullet"></i> register your game<br/>
+                        <i class="fas fa-check-circle jam-bullet"></i> Until Dec 20, 4pm
+                    </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 text-justify">
+                    <h2 class="row-heading"><i class="fab fa-twitch"></i> &nbsp; Join our stream!</h2>
+                    We'll be streaming on <a href="https://www.twitch.tv/dermotte_">Twitch</a>!
+                    <p>
+                        <!-- <i class="fas fa-check-circle jam-bullet"></i> on <a href="https://www.twitch.tv/dermotte_">Twitch</a><br/> -->
+                        <!-- <i class="fas fa-check-circle jam-bullet"></i> on <a href="https://fb.me/gamejamklagenfurt">Facebook</a><br/>
+                        <i class="fas fa-check-circle jam-bullet"></i> on <a href="https://www.youtube.com/user/dermotte">Youtube</a> -->
+                    </p>
+                </ul>
+                    </p>
+                    <a name="qa"></a>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+        </div>
+        <!-- Vialog - post event -->
+        <div class="container-fluid bg-lightGrey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a name="vialog"></a>
+                        <div style="margin-top: 12pt" class="vialog-plugin" data-title="KluJam07 - Highlights and Memories" data-partner-id="KlagenfurtGameJamAT" data-topic-id="780" data-question-label="jammer" data-answer-label="organiser" data-action="add highlight" data-reply-card="Share your thoughts!"></div>
+
+                        <div style="margin-top: 12pt" class="vialog-plugin" data-title="KluJam07 - What are you looking forward to?" data-partner-id="KlagenfurtGameJamAT" data-topic-id="693"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <!--                <div id="whatIsGameJam" class="col-lg-12">-->
+
+            <!--                </div>-->
+            <div class="col-lg-4 text-justify">
+                <h2 class="row-heading">What is a Game Jam?</h2><a name="what"></a>
+                <p>The 7th Klagenfurt Game Jam is open to everyone who likes games and wants to create, test and
+                    talk about games. Starting on Friday the topic will be revealed to all participants at the same time.
+                    Then, after the ideas are pitched, team will be built around ideas and games
+                    are to be created. Finally, on Sunday, the projects are presented and can be played and tested.
+                    There is also a user voting to honor the best games in various categories where everybody can
+                    vote - so bring your friends and family ;) The game jam is not restricted to game designers or programmers, but is open to everyone who
+                    wants to build games. Each team is in desperate need for visual and audio artist, animation experts, web
+                    page writers, storytellers, testers, etc.</p>
+
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 text-justify">
+                <h2 class="row-heading">99% digital #klujam!</h2>
+                <p>Due to the second lockdown we have decided to go 99% digital with our game jam.
+                    Please join in and register!
+                </p>
+                <p>
+                    How so? We'll provide an online meeting for the topic announcement and the project pitching as well as for the presentation of games.
+                    Throughout the game jam we'll stream & code at the same time and we invite all of you to do the same! Using the Discord server we can stay
+                    in contact and have our coffee talks or the first morning beer together, just like in the good old times ☕
+                </p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 text-justify">
+                <h2 class="row-heading">Connect!</h2>
+                <p>We encourage heavy use of our digital communication channels including our
+                <ul style="list-style: none">
+                    <li><i class="fab fa-discord"></i> <a href="https://discord.gg/3VzRJz4">Discord server </a></li>
+                    <li> <i class="fab fa-twitter-square"></i> <a class="nav-link" href="https://twitter.com/hashtag/klujam?src=hash">Twitter hashtag</a></li>
+                    <li> <i class="fab fa-facebook-square"></i> <a class="nav-link" href="https://www.facebook.com/gamejamklagenfurt/">Facebook page </a></li>
+                </ul>
+                </p>
+                <a name="qa"></a>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+    </div>
+
+        <div class="container-fluid bg-lightGrey">
+            <div class="container">
+                <div class="row" style="margin-top: 32px; padding-top: 32px;">
+                    <div class="col-md-8">
+                        <h2 class="row-heading">How to participate?</h2><a name="register"></a>
+                        <!-- <p>If you plan on joining the fun, please use the registration form below (or the one on
+                            eventbrite) to let us know you're coming. We are looking forward to provide with a great game jam experience!</p> -->
+
+                        <b>Eventbrite registration is in the works. Check back soon.</b>
+                        <div id="eventbrite-widget-container-81451653087"></div>
+
+                        <br>
+                        <br>
+<!--                        <h3 class="row-heading">What is here for you?</h3>-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-sm-6">-->
+<!--                                <ul class="iconlist nobottommargin">-->
+<!--                                    <li><i class="icon-ok"></i> Free admission</li>-->
+<!--                                    <li><i class="icon-ok"></i> Drinks & snacks provided</li>-->
+<!--                                    <li><i class="icon-ok"></i> Internet connection</li>-->
+<!--                                    <li><i class="icon-ok"></i> Meeting other nice jammers</li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                            <div class="col-sm-6">-->
+<!--                                <ul class="iconlist nobottommargin">-->
+<!--                                    <li><i class="icon-ok"></i> Work space</li>-->
+<!--                                    <li><i class="icon-ok"></i> Doors open nearly 24h</li>-->
+<!--                                    <li><i class="icon-ok"></i> Coffee, coffee and even more coffee</li>-->
+<!--                                    <li><i class="icon-ok"></i> Free Goodies!</li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
+                    <div class="col-md-4" style="padding-left:20px; height: 500px">
+                        <h2 class="row-heading">Video Archive</h2>
+                        <iframe width="100%" height="33%" src="https://www.youtube.com/embed/videoseries?list=PLkb7TymgoWW5IEWs_BRLVFtFSRSVgF22j" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <br>
+                        <br>
+                    </div>
+<!--                    <div class="col-md-4" style="padding-left:20px;">-->
+<!--                        <h2 class="row-heading">5th Game Jam Photos<br></h2>-->
+<!--                        <div style="min-height:260px;">-->
+<!--                            <a data-flickr-embed="true" data-footer="true"-->
+<!--                                href="https://www.flickr.com/photos/mathias_l/albums/72157693132714552"-->
+<!--                                title="5th Klagenfurt Game Jam">-->
+<!--                                <img src="https://farm1.staticflickr.com/979/40897449885_50881b22d1_n.jpg" width="320"-->
+<!--                                    height="213" alt="5th Klagenfurt Game Jam"></a>-->
+<!--                            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4" style="padding-left:20px;">-->
+<!--                        <h2 class="row-heading">1st Winter Game Jam Photos<br></h2>-->
+<!--                        <div style="min-height:260px;">-->
+<!--                            <a data-flickr-embed="true" data-footer="true"-->
+<!--                                href="https://www.flickr.com/photos/mathias_l/albums/72157667459784329"-->
+<!--                                title="1st Winter Game Jam"><img-->
+<!--                                    src="https://farm5.staticflickr.com/4516/25209112178_90b7d8dc79_n.jpg" width="320"-->
+<!--                                    height="213" alt="1st Winter Game Jam"></a>-->
+<!--                            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="row-heading">Topic</h2>
+
+                    <div id="topic">
+                        <p style="font-size: 18pt; font-style: italic">Topic will be announced on Dec 18th 2020</p>
+                    </div>
+                    <h2 class="row-heading">Diversifiers</h2><!--
+                <p>These are optional criteria your game can match if you want to. For each diversifier you chose to include, you'll get one additional bonus point at the voting in the categorie "Favourite Game".</p> -->
+                <p>A list of diversifiers will also be announced.</p>
+                    <!-- <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-check-square-o"></i> #QuarantineBeard</li>
+                    <li><i class="fa-li fa fa-check-square-o"></i> #OnlineMultiplayer </li>
+                    <li><i class="fa-li fa fa-check-square-o"></i> #HelpAFriend</li>
+                    <li><i class="fa-li fa fa-check-square-o"></i> #OpenEnd</li>
+                    <li><i class="fa-li fa fa-check-square-o"></i> #MinimalInput</li> -->
+
+                </ul>
+                </div>
+                <!-- <div class="col-md-6 col-sm-12">
+                <iframe align="right" width="560" height="315" src="https://www.youtube.com/embed/gsjGqgBMNM4"
+                        frameborder="0" allowfullscreen></iframe>
+            </div> -->
+            </div>
+        </div>
+
+        <div class="container-fluid bg-lightGrey">
+            <div class="container">
+                <div class="row" style="padding-top: 32px; padding-bottom: 32px;">
+                    <div class="col-md-6">
+                        <h2 class="row-heading">Rules</h2><a name="rules"></a>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-dot-circle-o"></i> All sorts of games are allowed, eg. video
+                                games,
+                                board games, card games, etc.
+                            </li>
+                            <li><i class="fa-li fa fa-dot-circle-o"></i> Your game must fit the topic.</li>
+                            <li><i class="fa-li fa fa-dot-circle-o"></i> You can work in a group (preferred) or alone.
+                            </li>
+                            <li><i class="fa-li fa fa-dot-circle-o"></i> You can use pre-existing code, like libraries
+                                or
+                                code
+                                samples.
+                            </li>
+                            <li><i class="fa-li fa fa-dot-circle-o"></i> You can use pre-existing art, like from <a
+                                    href="http://opengameart.org/">OpenGameArt</a> or <a
+                                    href="http://freesound.org/">FreeSound</a>.
+                            </li>
+                            <li><i class="fa-li fa fa-dot-circle-o"></i> You can use external tools like <a
+                                    href="http://www.mapeditor.org/">Tiled</a> or <a
+                                    href="http://esotericsoftware.com/">Spine
+                                    2D</a>.
+                            </li>
+                            <li><i class="fa-li fa fa-dot-circle-o"></i> Do not re-skin an already existing game or
+                                prototype!
+                            </li>
+                            <li><i class="fa-li fa fa-dot-circle-o"></i> You must publish the source of your game, e.g.
+                                to
+                                <a href="https://github.com/">GitHub</a>.
+                            </li>
+                            <li><i class="fa-li fa fa-dot-circle-o"></i> Your art, sound, and music must be licensed
+                                under
+                                <a href="https://creativecommons.org">Creative Commons</a>.
+                            </li>
+                            <li><i class="fa-li fa fa-dot-circle-o"></i> You must submit your game to the itch.io Jam
+                                page
+                                before the itch.io deadline so don't miss it.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="row-heading">Useful Resources</h2>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-gear"></i> Check out <a
+                                    href="http://itec.aau.at/gamejam/2015/game-jam-survival-guide-compressed.pdf">Mario's
+                                    Guide
+                                    to Game Jam Survival</a>.
+                            </li>
+                            <li><i class="fa-li fa fa-gear"></i> Decide and get familiar with a game dev framework or
+                                engine,
+                                ie.
+                                <a href="https://libgdx.badlogicgames.com/">libGDX</a>, <a
+                                    href="http://phaser.io/">Phaser</a>,
+                                <a href="https://www.unrealengine.com/">Unreal</a>, <a
+                                    href="http://unity3d.com/">Unity</a>, ...
+                            </li>
+                            <li><i class="fa-li fa fa-gear"></i> Check the <a
+                                    href="https://docs.google.com/document/d/1qQf5zjvJHEB40xYhTiFo9GzNYUBt8iAw8vzPu2Oy354/edit">Resources
+                                    for Game Jammers</a> or <a
+                                    href="https://game-development.zeef.com/david.arcila">GDR</a>
+                            </li>
+                            <li><i class="fa-li fa fa-gear"></i> Install and test your tools before entering the jam!
+                                This saves
+                                a lot of time and network bandwidth!
+                            </li>
+                            <li><i class="fa-li fa fa-gear"></i>For Game Designers check out <a
+                                    href="https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw">Game Maker's
+                                    Toolkit</a></li>
+                            <li><i class="fa-li fa fa-gear"></i>If you're working with Unity, check out the tutorials by
+                                <a href="https://www.youtube.com/user/Brackeys">Brackeys</a>.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 hidden-sm-down">
+                        <img src="images/assets/Blue-Alien-left.gif" alt="CC0 by Mathias Lux"
+                            title="CC BY SA 2017 Mathias Lux">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--div class="container-fluid  bg-lightGrey">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Games developed at the 3rd Klagenfurt Game Jam</h1>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Die kleine Fee</h4>
+                    <p><a href="https://grewivi.itch.io/die-kleine-fee"><img src="images/screenshots/kleinefee.jpg" class="img-rounded"></a></p>
+                    <p>You are a fairy. You must fly away from the spider and pick up the rice bowl to get points.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Torn John</h4>
+                    <p><a href="https://wolframhofmeister.itch.io/torn-john"><img src="images/screenshots/tornjohn.jpg" class="img-rounded"></a></p>
+                    <p>You are Lieutenant John, science officer on the USS Infinity. One of your comrades crashed his ship on a nearby planet. Captain Sergey has ordered you to collect all the shrapnell and return it to him.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Don't trust the Fairy</h4>
+                    <p><a href="https://asleif.itch.io/dont-trust-the-fairy"><img src="images/screenshots/trust_fairy.jpg" class="img-rounded"></a></p>
+                    <p>The Hero Ahref is trapped in a Dungeon and his only way out of this dark hellhole is an out of work Fairy. Will Ahref carefully manage the light of his Fairy or will he brutally force her to feast on her own kind to replenish her strength?</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Hokus & Pokus Epic Adventure</h4>
+                    <p><a href="https://hokus-pokus.itch.io/hokus-pokus-epic-adventure"><img src="images/screenshots/hokus_pokus.jpg" class="img-rounded"></a></p>
+                    <p>Tootsie the Toasted Tooth Fairy and queen of Ever-no-neverwhere is supposed to divide the teeth equally among all residents of the realm. However, she has recently began smoking exorbitant amounts of weed and decided to keep all teeth for herself [...]</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Pixie Smack</h4>
+                    <p><a href="https://frederikflpl.itch.io/pixiesmack"><img src="images/screenshots/pixie.jpg" class="img-rounded"></a></p>
+                    <p>You smack fairies to make them drop fairy dust. Then you collect it in a basket. The more you gather, the more points you get. But beware, your time is limited.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Running Fairy</h4>
+                    <p><a href="https://murks.itch.io/running-fairy"><img src="images/screenshots/running.jpg" class="img-rounded"></a></p>
+                    <p>The fairy cannot fly anymore, but has to float over steaming rice bowls to escape a Chinese restaurant.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Fairy Fight</h4>
+                    <p><a href="https://bubez.itch.io/fairy-fight"><img src="images/screenshots/fight.jpg" class="img-rounded"></a></p>
+                    <p>Shoot!  Have you ever seen a fairy?</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Rice Rain</h4>
+                    <p><a href="https://adiguz.itch.io/ricerain"><img src="images/screenshots/raice_rain.jpg" class="img-rounded"></a></p>
+                    <p>A fairy spreads rice grains, and you got a bowl to catch them!</p>
+                </div>
+            </div>
+        </div>
+    </div-->
+
+
+        <div class="container">
+            <div class="row" style="">
+                <div class="col-lg-4 hidden-md-down">
+
+                    <img class="img-fluid center-block" src="images/cookiewin.png" alt="Cookie Monster by Zenze">
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4"></div>
+                <div class="col-lg-6">
+                    <h2 class="row-heading">Program</h2><a name="program"></a>
+                </div>
+                <div class="col-lg-8">
+                    <p>The 4th Winter Game Jam takes place online! Stay tuned for more specific program announcements!</p>
+                    <table class="table" style="min-width: 100%">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Location</th>
+                                <th>Program</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Fr, 18.12</td>
+                            <td>16:00</td>
+                            <td><a href="https://www.twitch.tv/dermotte_">Online</a></td>
+                            <td>Welcome &amp; Topic Announcement</td>
+                            <td>Join us on <a href="https://www.twitch.tv/dermotte_">Twitch</a>!</td>
+                        </tr>
+                        <tr>
+                            <td>Fr, 18.12.</td>
+                            <td>17:00</td>
+                            <td><a href="https://www.twitch.tv/dermotte_">Online</a></td>
+                            <td>Project Pitching</td>
+                            <td>Check <a href="https://discord.gg/3VzRJz4">Discord</a> for pitching your idea on stream!</td>
+                        </tr> 
+                        <tr>
+                            <td>Sa, 19.12.</td>
+                            <td>10:00</td>
+                            <td><a href="https://www.twitch.tv/dermotte_">Online</a></td>
+                            <td>Saturday Morning Stream on <a href="https://www.twitch.tv/dermotte_">Twitch</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Sa, 19.12.</td>
+                            <td>13:00</td>
+                            <td><a href="https://www.twitch.tv/dermotte_">Online</a></td>
+                            <td>Community Lunch on Discord</td>
+                            <td>Join us for lunch on <a href="https://discord.gg/3VzRJz4">Discord</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sa, 19.12.</td>
+                            <td>19:00</td>
+                            <td><a href="https://www.twitch.tv/dermotte_">Online</a></td>
+                            <td>Late Night Stream on <a href="https://www.twitch.tv/dermotte_">Twitch</a></td>
+                            <td>Tune in to see interviews with our fellow game devs/artists. Join the streaming channel on <a href="https://discord.gg/3VzRJz4">Discord</a> to give an interview!</td>
+                        </tr>
+                        <tr>
+                            <td>Sun, 20.12.</td>
+                            <td>10:00</td>
+                            <td><a href="https://www.twitch.tv/dermotte_">Online</a></td>
+                            <td>Sunday Morning Stream on <a href="https://www.twitch.tv/dermotte_">Twitch</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Sun, 20.12.</td>
+                            <td>16:00</td>
+                            <td><a href="https://www.twitch.tv/dermotte_">Online</a></td>
+                            <td>Game Presentations</td>
+                            <td>Check <a href="https://discord.gg/3VzRJz4">Discord</a> to see when it's your time to show your game!</td>
+                        </tr> 
+                        </tbody>
+                    </table>
+                   
+                </div><!-- /.col-lg-4 -->
+
+            </div><!-- /.row -->
+        </div>
+
+        <div class="container">
+            <div class="row" style="">
+                <div class="col-md-12">
+                    <h2 class="row-heading">Impressions from previous Game Jams</h2>
+                </div>
+                <div class="col-md-4 hidden-md-down text-md-center"><img
+                        src="images/photos/33516078984_77ed6cb147_k.jpg" class="img-fluid img-rounded"> The team of the
+                    game
+                    <a href="https://kruemelkatze.itch.io/cookies-in-the-sky">Cookies in the Sky</a> posing for the team
+                    photo.
+                </div>
+                <div class="col-md-4 hidden-md-down text-md-center"><img
+                        src="images/photos/34179147992_35f4425952_k.jpg" class="img-fluid img-rounded">
+                    Music producer Peter Hafele conjuring up soundscapes for the games.
+                    <audio controls id="peterHafele">
+                        <source src="images/soundscape/01%20Cookie%20&%20Cloud%20Theme%20.mp3">
+                        <source src="images/soundscape/02%20Dungeon%20Crawler%20Theme.mp3">
+                        <source src="images/soundscape/03%20Fairy%20Theme.mp3">
+                        <source src="images/soundscape/04%20Milk.mp3">
+                        <source src="images/soundscape/05%20Eastern%20Touch.mp3">
+                        <source src="images/soundscape/06%20Up%20In%20The%20Sky.mp3">
+                        <source src="images/soundscape/07%20A%20Night,%20A%20Crime.mp3">
+                    </audio>
+                    <br /><a href="javascript:nextSong()">next song <i class="fa fa-step-forward"
+                            aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-4 hidden-md-down text-md-center"><img
+                        src="images/photos/33526979463_d8fefb1ca7_k.jpg" class="img-fluid img-rounded"> The <a
+                        href="https://el-schniz.itch.io/cookie-and-cloud">Cookie and Cloud</a> team at work late at
+                    night,
+                    still extremely motivated.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="row-heading">Entries</h2>
+                        <p>Check out the top 3 games of the last Klagenfurt Game Jam, taking place on April 24th 2020 until April 26th 2020:</p>
+                        <div class="hidden-sm-down">
+                            <table class="topentries">
+                                <tr>
+                                    <td> <i class="fa fa-trophy gold" aria-hidden="true"></i> 1.</td>
+                                    <td><iframe frameborder="0" src="https://itch.io/embed/625259" width="552"
+                                            height="167"></iframe></td>
+                                </tr>
+                                <tr>
+                                    <td> <i class="fa fa-trophy silver" aria-hidden="true"></i> 2.</td>
+                                    <td><iframe frameborder="0" src="https://itch.io/embed/625201" width="552"
+                                            height="167"></iframe></td>
+                                </tr>
+                                <tr>
+                                    <td> <i class="fa fa-trophy bronze" aria-hidden="true"></i> 3.</td>
+                                    <td><iframe frameborder="0" src="https://itch.io/embed/625174" width="552"
+                                            height="167"></iframe></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="hidden-md-up">
+                            <table class="topentries">
+                                <tr>
+                                    <td> <i class="fa fa-trophy gold" aria-hidden="true"></i> 1.</td>
+                                    <td><iframe frameborder="0" src="https://itch.io/embed/625259" width="200"
+                                            height="167"></iframe></td>
+                                </tr>
+                                <tr>
+                                    <td> <i class="fa fa-trophy silver" aria-hidden="true"></i> 2.</td>
+                                    <td><iframe frameborder="0" src="https://itch.io/embed/625201" width="200"
+                                            height="167"></iframe></td>
+                                </tr>
+                                <tr>
+                                    <td> <i class="fa fa-trophy bronze" aria-hidden="true"></i> 3.</td>
+                                    <td><iframe frameborder="0" src="https://itch.io/embed/625174" width="200"
+                                            height="167"></iframe></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <a href="https://itch.io/jam/7thklujam" target="_blank">
+                            <button class="bigGreenButton" href="#">See all 16 entries on itch.io</button>
+                        </a>
+                </div>
+            </div>
+        </div>
+        <script language="JavaScript">
+            /* song switcher for demo songs from the game jam */
+            var songs = new Array(
+                "images/soundscape/01%20Cookie%20&%20Cloud%20Theme%20.mp3",
+                "images/soundscape/02%20Dungeon%20Crawler%20Theme.mp3",
+                "images/soundscape/03%20Fairy%20Theme.mp3",
+                "images/soundscape/04%20Milk.mp3",
+                "images/soundscape/05%20Eastern%20Touch.mp3",
+                "images/soundscape/06%20Up%20In%20The%20Sky.mp3",
+                "images/soundscape/07%20A%20Night,%20A%20Crime.mp3"
+            )
+            var index = 1;
+            var audioPlayer = document.getElementById("peterHafele");
+            function nextSong() {
+                audioPlayer.src = songs[index];
+                index++;
+                index = index % songs.length;
+                audioPlayer.play();
+            }
+        </script>
+        <!-- Modal -->
+        <div class="modal fade" id="modalTalkMarkus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h2 class="modal-title" id="myModalLabel">Games and Accessibility</h2>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Abstract</h3>
+                        <p> In this talk I will share my experiences about my start-up life, game
+                            accessibility and the importance of gaming for people with disabilities.
+                            After my presentation everyone will know why it is important to include
+                            "easy" difficulty levels in games and what is important to actually make
+                            games accessible for anyone.
+                        </p>
+                        <h3>Short CV</h3>
+                        <p> Markus Pröll studied Software Engineering & Business at the Graz
+                            University of Technology, Austria. During his master's studies he worked
+                            with the Institute of Knowledge Discovery, Laboraty of Brain-Computer
+                            Interfaces, Graz. He is a passionate video gamer and has a strong
+                            interest in the gaming industry as such.
+                            Since 2012 Pröll is the head of a start-up company called Xcessity.
+                            Xcessity is designing affordable input controllers for people with
+                            severe disabilities.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalTalkVince" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h2 class="modal-title" id="myModalLabel2">THE ROCK FLICKZ CASE: using a mobile game for music
+                            advertising, entertainment and business model
+                        </h2>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Abstract</h3>
+                        <p> The aim of this presentation is to discuss the strategies behind the Brazilian mobile game
+                            ROCK
+                            FLICZ created by SIOUX Studio in 2016. We will analyze the strategical concept for a game,
+                            since the
+                            information architecture till the final interface. In the end we will try to understand how
+                            a casual
+                            game could be a platform for bands, advertising, and brands partnerships.
+                        </p>
+                        <p>
+                            Tags: game design, business model, music, Brazil, Rock Flicz
+                        </p>
+                        <h3>Short CV</h3>
+                        <p> M.A. Vicente Martin Mastrocola is a Postgraduate Research student and graduation level
+                            teacher at
+                            ESPM/São Paulo, Brazil; Vicente has worked at ESPM University (São Paulo/Brazil) as a
+                            Digital Media
+                            teacher since 2005 and as supervisor of the Creativity Department since 2012. Vicente also
+                            works as
+                            game designer in Brazil, developing games for mobile platforms and analogical board
+                            games/card
+                            games. In this moment he is living in Bratislava doing part of his doctorate in the
+                            Paneurópska
+                            vysoká škola
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalTalkBoni" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h2 class="modal-title" id="myModalLabel3">Gamification@Skiline - How we created the world's
+                            largest
+                            skiing competition with tens of thousands participants.
+                        </h2>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Abstract</h3>
+                        <p> Skiline is all about creating unique emotions on mountains and the fully automated
+                            production of
+                            digital memories for users.
+                            On top of our products, we intensively utilize gamification concepts to realize incomparable
+                            competions, challenges and events. In my talk I will provide some facts about Skiline and
+                            present
+                            our products and gamification approach which attract millions of users.
+                        </p>
+                        <h3>Short CV</h3>
+                        <p> Bonifaz Kaufmann studied Informatics at the Alpen-Adria Universität Klagenfurt, the
+                            University of
+                            Westminter, and at the Massachusetts Institute of Technology. For his contribution to
+                            Human-Computer
+                            Interaction research, he received a doctorial degree from the Alpen-Adria Universität
+                            Klagenfurt.
+                            Bonifaz published several mobile apps serving millions of users and he worked as a CTO for a
+                            start-up company which created highly interactive 3D underwater maps with Unity3D.
+                            Currently,
+                            Bonifaz works as a technology consultant and is Head of Product Management at Skiline, where
+                            he is
+                            focussed on developing new products while constantly improving already established ones.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-lightGrey">
+            <div class="container">
+                <div class="row" style="margin-bottom: 32px;padding-top:32px;">
+                    <div class="col-md-8">
+                        <h2 class="row-heading">Our Sponsors</h2>
+                        <!--<p>Our sponsors provide </p>-->
+                        <div class="">
+                            <div class="row sponsors" style="margin-top:0;">
+                                <div class="col-sm-4">
+                                    <a href="http://www.anexia-it.com" target="_blank">
+                                        <img src="images/sponsors/Logo-anexia.jpg"
+                                            class="img-fluid center-block media-middle">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="http://www.aau.at/" target="_blank">
+                                        <img src="images/sponsors/Logo-AAU.jpg"
+                                            class="img-fluid center-block media-middle">
+                                    </a>
+                                </div>
+                                <!-- <div class="col-sm-4">
+                                <a href="http://datasix.at">
+                                    <img src="images/sponsors/Logo-datasix.jpg"
+                                         class="img-fluid center-block media-middle">
+                                </a>
+                            </div> -->
+                                <div class="col-sm-4">
+                                    <a href="https://www.dynatrace.com/" target="_blank">
+                                        <img src="images/sponsors/Logo-dynatrace.jpg"
+                                            class="img-fluid center-block media-middle">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="row sponsors" style="margin-top:0;">
+                                <div class="col-sm-4">
+                                    <a href="http://www.imendo.at/" target="_blank">
+                                        <img src="images/sponsors/Logo-imendo.jpg"
+                                            class="img-fluid center-block media-middle">
+                                    </a>
+                                </div>
+
+                                <!-- <div class="col-sm-4">
+                                <a href="http://bitmovin.com" target="_blank">
+                                    <img src="images/sponsors/Logo-bitmovin.jpg"
+                                         class="img-fluid center-block media-middle">
+                                </a>
+                            </div> -->
+                                <div class="col-sm-4">
+                                    <a href="https://www.alturos.com/" target="_blank">
+                                        <img src="images/sponsors/Logo-alturos.jpg"
+                                            class="img-fluid center-block media-middle">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="http://www.ftf.or.at" target="_blank">
+                                        <img src="images/sponsors/Logo-ftf.jpg"
+                                            class="img-fluid center-block media-middle">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row sponsors" style="margin-top:0;">
+
+                                <div class="col-sm-4">
+                                    <a href="https://sensolligent.com/">
+                                        <img src="images/sponsors/Logo-sensolligent.png"
+                                            class="img-fluid center-block media-middle">
+                                    </a>
+                                </div>
+                            </div>
+                            <!--<div class="row">
+                            <div class="col-sm-6">
+                                <a href="http://www.econob.com/">
+                                    <img src="images/sponsors/econob-logo.png"
+                                         class="img-fluid center-block media-middle sponsor-wide">
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="http://www.oeh-klagenfurt.at/">
+                                    <img src="images/sponsors/oeh_logo_330.png"
+                                         class="img-fluid center-block media-middle sponsor-wide">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="row" style="margin-top: 24px">
+                            <div class="col-sm-6">
+
+                                <a href="http://www.hirterbier.at/">
+                                    <img src="images/sponsors/hirter-logo.png"
+                                         class="img-fluid center-block media-middle sponsor-square">
+                                </a>
+
+
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="http://www.ftf.or.at/">
+                                    <img src="images/sponsors/f-verein-logo.png"
+                                         class="img-fluid center-block media-middle sponsor-square">
+                                </a>
+                            </div>
+
+                        </div>-->
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="row-heading">Organization Team </h2>
+                        (in alphabetical order)
+                        <ul>
+                            <li>Andreas Leibetseder</li>
+                            <li>Armin Lippitz</li>
+                            <li>Christoph Wedenig</li>
+                            <li>Felix Schnitz</li>
+                            <li>Martin Proprentner</li>
+                            <li>Mathias Lux</li>
+                            <li>Natascha Rauscher</li>
+                            <li>Sabrina Kletz</li>
+                            <li>Veit Frick</li>
+                        </ul>
+                        <p>Game Jam <a href="https://discord.gg/3VzRJz4">Discord Channel <i
+                                    class="fab fa-discord"></i></i></a></p>
+                        <p>Supported by the <a href="http://itec.aau.at">Institute for Information Technology</a> and
+                            the <a href="http://technik.aau.at/en/">Faculty for Technical Sciences</a> at
+                            <a href="http://www.aau.at">Klagenfurt University</a>, Austria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--<hr class="featurette-divider">-->
+
+            <!-- FOOTER -->
+            <footer class="row">
+                <p class="pull-xs-right small">Visuals:<br>(CC) BY SA Daniela Meinhardt, Mathias Lux
+                    &middot; Photos (CC) BY Mathias Lux</p>
+                <!--<p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>-->
+                <p class="small">
+                    Impressum:<br>
+                    Dr. Mathias Lux &middot;
+                    Klagenfurt University, AT &middot;
+                    <i class="fa fa-phone"></i> +43 (664) 8398866 &middot;
+                    Email: mlux@itec.aau.at<br>
+
+                </p>
+            </footer>
+
+        </div><!-- /.container -->
+
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- smooth scroll -->
+        <script>
+
+            $("#registerNavLink").click(function () {
+                scrollTo($('a[name=register]'));
+            });
+            $("#rulesNavLink").click(function () {
+                scrollTo($('a[name=rules]'));
+            });
+
+            $("#programNavLink").click(function () {
+                scrollTo($('a[name=program]'));
+            });
+            $("#homeNavLink").click(function () {
+                scrollTo($("body"));
+            });
+            $("#learnMoreGameJamButton").click(function () {
+                scrollTo($("#whatIsGameJam"));
+            });
+
+            function scrollTo(e) {
+                console.log(e);
+                $('html, body').animate().stop();
+                $('html, body').animate({
+                    scrollTop: $(e).offset().top - 242
+                }, 1000);
+            }
+
+        </script>
+
+
+        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+        <script type="text/javascript">
+            var exampleCallback = function () {
+                console.log('Order complete!');
+            };
+
+            window.EBWidgets.createWidget({
+                widgetType: 'checkout',
+                eventId: '98984546443',
+                modal: true,
+                modalTriggerElementId: 'eventbrite-widget-modal-trigger-81451653087',
+                onOrderComplete: exampleCallback
+            });
+
+
+
+            window.EBWidgets.createWidget({
+                // Required
+                widgetType: 'checkout',
+                eventId: '98984546443',
+                iframeContainerId: 'eventbrite-widget-container-81451653087',
+
+                // Optional
+                iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+            });
+        </script>
+        <script src="https://qa.vialog.app/vialog.min.js"></script>
 </body>
+
 </html>
