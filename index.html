@@ -89,14 +89,14 @@
 
 
                     <!-- Noscript content for added SEO -->
-                    <noscript><a href="https://www.eventbrite.com/e/7th-klagenfurt-game-jam-registration-989845464437" rel="noopener noreferrer" target="_blank"></noscript>
+                    <noscript><a href="https://www.eventbrite.com/e/4th-winter-game-jam-registration-129133647215" rel="noopener noreferrer" target="_blank"></noscript>
                     <!-- You can customize this button any way you like -->
                     <button id="eventbrite-widget-modal-trigger-81451653087" class="signUpButton" type="button">Register</button>
                     <!-- <button class="signUpButton">Register</button> -->
                     <noscript></a>Get registered on Eventbrite</noscript>
 
 
-                    <a href="https://itch.io/jam/4th-winter-gamejam">
+                    <a href="https://itch.io/jam/4th-winter-gamejam" target="_blank">
                         <button class="signUpButton">Join on Itch.io</button>
                     </a>
                 </div>
@@ -319,7 +319,7 @@
             <!--                </div>-->
             <div class="col-lg-4 text-justify">
                 <h2 class="row-heading">What is a Game Jam?</h2><a name="what"></a>
-                <p>The 7th Klagenfurt Game Jam is open to everyone who likes games and wants to create, test and
+                <p>The 4th Winter Game Jam is open to everyone who likes games and wants to create, test and
                     talk about games. Starting on Friday the topic will be revealed to all participants at the same time.
                     Then, after the ideas are pitched, team will be built around ideas and games
                     are to be created. Finally, on Sunday, the projects are presented and can be played and tested.
@@ -360,10 +360,10 @@
                 <div class="row" style="margin-top: 32px; padding-top: 32px;">
                     <div class="col-md-8">
                         <h2 class="row-heading">How to participate?</h2><a name="register"></a>
-                        <!-- <p>If you plan on joining the fun, please use the registration form below (or the one on
-                            eventbrite) to let us know you're coming. We are looking forward to provide with a great game jam experience!</p> -->
+                        <p>If you plan on joining the fun, please use the registration form below (or the one on
+                            eventbrite) to let us know you're coming. We are looking forward to providing you with a great game jam experience!</p>
 
-                        <b>Eventbrite registration is in the works. Check back soon.</b>
+                        <!-- <b>Eventbrite registration is in the works. Check back soon.</b> -->
                         <div id="eventbrite-widget-container-81451653087"></div>
 
                         <br>
@@ -1091,28 +1091,26 @@
 
         </script>
 
-
         <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
         <script type="text/javascript">
-            var exampleCallback = function () {
+            var exampleCallback = function() {
                 console.log('Order complete!');
+                alert("Thanks for joining and we are looking forward to seeing you online!")
             };
 
             window.EBWidgets.createWidget({
                 widgetType: 'checkout',
-                eventId: '98984546443',
+                eventId: '129133647215',
                 modal: true,
                 modalTriggerElementId: 'eventbrite-widget-modal-trigger-81451653087',
                 onOrderComplete: exampleCallback
             });
 
-
-
             window.EBWidgets.createWidget({
                 // Required
                 widgetType: 'checkout',
-                eventId: '98984546443',
+                eventId: '129133647215',
                 iframeContainerId: 'eventbrite-widget-container-81451653087',
 
                 // Optional
@@ -1120,6 +1118,7 @@
                 onOrderComplete: exampleCallback  // Method called when an order has successfully completed
             });
         </script>
+
         <script src="https://qa.vialog.app/vialog.min.js"></script>
 </body>
 
