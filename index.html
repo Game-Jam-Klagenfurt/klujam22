@@ -67,6 +67,12 @@
             padding-right: 6pt;
             color: #003CA6;
         }
+
+        .jam-list {
+          list-style-type: none;
+          margin-left: 2;
+          padding-left: 0;
+        }
     </style>
 
     <!-- Custom styles for this template -->
@@ -317,12 +323,11 @@
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 text-justify">
                 <h2 class="row-heading">Connect!</h2>
-                <p>We encourage heavy use of our digital communication channels including our
-                <ul style="list-style: none">
-                    <li><i class="fab fa-discord"></i> <a href="https://discord.gg/3VzRJz4">Discord server </a></li>
-                    <li> <i class="fab fa-twitter-square"></i> <a class="nav-link" href="https://twitter.com/hashtag/klujam?src=hash">Twitter hashtag</a></li>
-                    <li> <i class="fab fa-facebook-square"></i> <a class="nav-link" href="https://www.facebook.com/gamejamklagenfurt/">Facebook page </a></li>
-                </ul>
+                <p>We encourage heavy use of our digital communication channels including our</p>
+                <p>
+                    <i class="fab fa-discord jam-bullet"></i> <a href="https://discord.gg/3VzRJz4">Discord server </a><br/>
+                    <i class="fab fa-twitter-square jam-bullet"></i> <a class="nav-link" href="https://twitter.com/hashtag/klujam?src=hash">Twitter hashtag</a><br/>
+                    <i class="fab fa-facebook-square jam-bullet"></i> <a class="nav-link" href="https://www.facebook.com/gamejamklagenfurt/">Facebook page </a><br/>
                 </p>
                 <a name="qa"></a>
             </div><!-- /.col-lg-4 -->
@@ -367,81 +372,64 @@
                 <div class="row" style="padding-top: 32px; padding-bottom: 32px;">
                     <div class="col-md-6">
                         <h2 class="row-heading">Rules</h2><a name="rules"></a>
-                        <ul class="fa-ul">
-                            <li><i class="fas fa-check-square"></i> All sorts of games are allowed, eg. video
-                                games,
-                                board games, card games, etc.
+                        <ul class="jam-list">
+                            <li><i class="fas fa-check-square jam-bullet"></i> All sorts of games are allowed, eg. video
+                                games, board & card games, ...
                             </li>
-                            <li><i class="fas fa-check-square"></i> Your game must fit the topic.</li>
-                            <li><i class="fas fa-check-square"></i> You can work in a group (preferred) or alone.
+                            <li><i class="fas fa-check-square jam-bullet"></i> Your game must fit the topic.</li>
+                            <li><i class="fas fa-check-square jam-bullet"></i> You can work in a group (preferred) or alone.
                             </li>
-                            <li><i class="fas fa-check-square"></i> You can use pre-existing code, like libraries
+                            <li><i class="fas fa-check-square jam-bullet"></i> You can use pre-existing code, like libraries
                                 or
                                 code
                                 samples.
                             </li>
-                            <li><i class="fas fa-check-square"></i> You can use pre-existing art, like from <a
+                            <li><i class="fas fa-check-square jam-bullet"></i> You can use pre-existing art, like from <a
                                     href="http://opengameart.org/">OpenGameArt</a> or <a
                                     href="http://freesound.org/">FreeSound</a>.
                             </li>
-                            <li><i class="fas fa-check-square"></i> You can use external tools like <a
+                            <li><i class="fas fa-check-square jam-bullet"></i> You can use external tools like <a
                                     href="http://www.mapeditor.org/">Tiled</a> or <a
                                     href="http://esotericsoftware.com/">Spine
                                     2D</a>.
                             </li>
-                            <li><i class="fas fa-check-square"></i> Do not re-skin an already existing game or
+                            <li><i class="fas fa-check-square jam-bullet"></i> Do not re-skin an already existing game or
                                 prototype!
                             </li>
-                            <li><i class="fas fa-check-square"></i> You must publish the source of your game, e.g.
+                            <li><i class="fas fa-check-square jam-bullet"></i> You must publish the source of your game, e.g.
                                 to
                                 <a href="https://github.com/">GitHub</a>.
                             </li>
-                            <li><i class="fas fa-check-square"></i> Your art, sound, and music must be licensed
+                            <li><i class="fas fa-check-square jam-bullet"></i> Your art, sound, and music must be licensed
                                 under
                                 <a href="https://creativecommons.org">Creative Commons</a>.
                             </li>
-                            <li><i class="fas fa-check-square"></i> You must submit your game to the itch.io Jam
-                                page
-                                before the itch.io deadline so don't miss it.
+                            <li><i class="fas fa-check-square jam-bullet"></i> You must submit your game to the itch.io Jam
+                                page before the deadline.
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
-                        <h2 class="row-heading">Useful Resources</h2>
-                        <ul class="fa-ul">
-                            <li><i class="fas fa-check-square"></i> Check out <a
-                                    href="http://itec.aau.at/gamejam/2015/game-jam-survival-guide-compressed.pdf">Mario's
-                                    Guide
-                                    to Game Jam Survival</a>.
-                            </li>
-                            <li><i class="fas fa-check-square"></i> Decide and get familiar with a game dev framework or
-                                engine,
-                                ie.
-                                <a href="https://libgdx.badlogicgames.com/">libGDX</a>, <a
-                                    href="http://phaser.io/">Phaser</a>,
-                                <a href="https://www.unrealengine.com/">Unreal</a>, <a
-                                    href="http://unity3d.com/">Unity</a>, ...
-                            </li>
-                            <li><i class="fas fa-check-square"></i> Check the <a
+                    <div class="col-md-6">
+                        <h2 class="row-heading">Tips &amp; Tricks</h2>
+                        <ul class="jam-list">
+                            <li><i class="fas fa-check-square jam-bullet"></i> Read <a href="http://itec.aau.at/gamejam/2015/game-jam-survival-guide-compressed.pdf">Mario's Survival Guide</a>.</li>
+                            <li><i class="fas fa-check-square jam-bullet"></i> Get familiar with tools and engines beforehand</li>
+                            <li><i class="fas fa-check-square jam-bullet"></i> Check the <a
                                     href="https://docs.google.com/document/d/1qQf5zjvJHEB40xYhTiFo9GzNYUBt8iAw8vzPu2Oy354/edit">Resources
                                     for Game Jammers</a> or <a
                                     href="https://game-development.zeef.com/david.arcila">GDR</a>
                             </li>
-                            <li><i class="fas fa-check-square"></i> Install and test your tools before entering the jam!
-                                This saves
-                                a lot of time and network bandwidth!
-                            </li>
-                            <li><i class="fas fa-check-square"></i> For Game Designers check out <a
-                                    href="https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw">Game Maker's
+                            <li><i class="fas fa-check-square jam-bullet"></i> Install and test your tools before entering the jam!</li>
+                            <li><i class="fas fa-check-square jam-bullet"></i> Game Designers check out <a href="https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw">Game Maker's
                                     Toolkit</a></li>
-                            <li><i class="fas fa-check-square"></i> If you're working with Unity, check out the tutorials by
+                            <li><i class="fas fa-check-square jam-bullet"></i> For Unity, check out the tutorials by
                                 <a href="https://www.youtube.com/user/Brackeys">Brackeys</a>.</li>
                         </ul>
                     </div>
-                    <div class="col-md-2 hidden-sm-down">
+                    <!--div class="col-md-2 hidden-sm-down">
                         <img src="images/assets/Blue-Alien-left.gif" alt="CC0 by Mathias Lux"
                             title="CC BY SA 2017 Mathias Lux">
-                    </div>
+                    </div-->
                 </div>
             </div>
         </div>
@@ -509,8 +497,8 @@
         <div class="container">
             <div class="row" style="">
                 <div class="col-lg-4 hidden-md-down">
-
-                    <img class="img-fluid center-block" src="images/cookiewin.png" alt="Cookie Monster by Zenze">
+                  <img src="images/assets/Blue-Alien-left.gif" alt="CC0 by Mathias Lux"
+                      title="CC BY SA 2017 Mathias Lux">
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4"></div>
                 <div class="col-lg-6">
@@ -683,18 +671,18 @@
                 <div class="col-md-4">
                   <h3 class="row-heading">Previous Jams</h3>
                   <p>Check out our archives on itch.io as long as they reach back in time:</p>
-                  <ul class="fa-ul" style="font-size: 11pt">
-                    <li><i class="fas fa-snowflake" style="width: 12pt"></i> <a href="https://itch.io/jam/4th-winter-gamejam">4th Winter Game Jam</a> - Dec 18-20, 2020</li>
-                    <li><i class="fas fa-sun" style="width: 12pt"></i> <a href="https://itch.io/jam/7thklujam">7th Klagenfurt Game Jam</a> - Apr 24-26, 2020</li>
-                    <li><i class="fas fa-snowflake" style="width: 12pt"></i> <a href="https://itch.io/jam/3rd-winterjam">3rd Winter Game Jam</a> - Dec 20-22, 2019</li>
-                    <li><i class="fas fa-sun" style="width: 12pt"></i> <a href="https://itch.io/jam/huettenjam">Hüttenjam</a> - Sep 26-29, 2019</li>
-                    <li><i class="fas fa-sun" style="width: 12pt"></i> <a href="https://itch.io/jam/6thklujam">6th Klagenfurt Game Jam</a> - Apr 26-28, 2019</li>
-                    <li><i class="fas fa-snowflake" style="width: 12pt"></i> <a href="https://itch.io/jam/2nd-winter-game-jam">2nd Winter Game Jam</a> - Dec 14-16, 2018</li>
-                    <li><i class="fas fa-sun" style="width: 12pt"></i> <a href="https://itch.io/jam/5th-klagenfurt-gamejam">5th Klagenfurt Game Jam</a> - Apr 26-28, 2018</li>
-                    <li><i class="fas fa-snowflake" style="width: 12pt"></i> <a href="https://itch.io/jam/1st-aau-winter-game-jam">1st Winter Game Jam</a> - Dec 15-17, 2017</li>
-                    <li><i class="fas fa-sun" style="width: 12pt"></i> <a href="https://itch.io/jam/klujam2017">4th Klagenfurt Game Jam</a> - Apr 28-30, 2017</li>
-                    <li><i class="fas fa-sun" style="width: 12pt"></i> <a href="https://itch.io/jam/summer-jam-klagenfurt-2016">Summer Jam</a> - Aug 5-7, 2016</li>
-                  </ul>
+                  <p>
+                    <i class="fas fa-snowflake  jam-bullet"></i> <a href="https://itch.io/jam/4th-winter-gamejam">4th Winter Game Jam</a> - Dec 18-20, 2020<br/>
+                    <i class="fas fa-sun jam-bullet"></i> <a href="https://itch.io/jam/7thklujam">7th Klagenfurt Game Jam</a> - Apr 24-26, 2020<br/>
+                    <i class="fas fa-snowflake jam-bullet"></i> <a href="https://itch.io/jam/3rd-winterjam">3rd Winter Game Jam</a> - Dec 20-22, 2019<br/>
+                    <i class="fas fa-sun jam-bullet"></i> <a href="https://itch.io/jam/huettenjam">Hüttenjam</a> - Sep 26-29, 2019<br/>
+                    <i class="fas fa-sun jam-bullet"></i> <a href="https://itch.io/jam/6thklujam">6th Klagenfurt Game Jam</a> - Apr 26-28, 2019<br/>
+                    <i class="fas fa-snowflake jam-bullet"></i> <a href="https://itch.io/jam/2nd-winter-game-jam">2nd Winter Game Jam</a> - Dec 14-16, 2018<br/>
+                    <i class="fas fa-sun jam-bullet"></i> <a href="https://itch.io/jam/5th-klagenfurt-gamejam">5th Klagenfurt Game Jam</a> - Apr 26-28, 2018<br/>
+                    <i class="fas fa-snowflake jam-bullet"></i> <a href="https://itch.io/jam/1st-aau-winter-game-jam">1st Winter Game Jam</a> - Dec 15-17, 2017<br/>
+                    <i class="fas fa-sun jam-bullet"></i> <a href="https://itch.io/jam/klujam2017">4th Klagenfurt Game Jam</a> - Apr 28-30, 2017<br/>
+                    <i class="fas fa-sun jam-bullet"></i> <a href="https://itch.io/jam/summer-jam-klagenfurt-2016">Summer Jam</a> - Aug 5-7, 2016<br/>
+                  <p>
                 </div>
             </div>
         </div>
