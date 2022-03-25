@@ -18,21 +18,23 @@ body {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     z-index: 10;
+    text-shadow: 0 0px 8px rgba(0, 0, 0, 1);
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
     height: 28rem;
-    background-color: #777;
+    background-color: #b8b8b8;
 }
 .carousel-item > img {
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
-    /*min-height: 100%;*/
-    /*max-height: none;*/
-    max-width: none;
+    min-width: 80%;
+    min-height: 100%;
+    max-height: none;
+    /* min-height: 28rem; 
+    max-width: none; */
     height: 28rem;
 }
 
